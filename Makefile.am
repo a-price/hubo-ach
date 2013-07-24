@@ -34,7 +34,7 @@ libhuboparams_la_LDFLAGS = -module -avoid-version -shared
 
 bin_PROGRAMS = hubo-daemon hubo-console hubo-read
 
-hubo_daemon_SOURCES = src/hubo-daemonizer.c src/hubo-daemon.c src/hubo-socketcan.c
+hubo_daemon_SOURCES = src/hubo-daemonizer.c src/hubo-daemon.c src/hubo-socketcan.c src/testCAN.c
 hubo_daemon_LDADD = -lm -lrt -lc libhuboparams.la
 
 hubo_console_SOURCES = src/hubo-console.cpp
